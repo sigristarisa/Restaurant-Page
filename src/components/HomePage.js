@@ -23,7 +23,7 @@ const NavBar = () => {
   const navBar = document.createElement("ul");
   navBar.setAttribute("id", "navbar");
 
-  // buttons in the navi //
+  // links in the navi //
   const home = document.createElement("li");
   const menu = document.createElement("li");
   const contact = document.createElement("li");
@@ -33,7 +33,7 @@ const NavBar = () => {
   contact.innerHTML = "Contact";
 
   //buttons making clickable //
-  home.addEventListener("click", () => {});
+  // home.addEventListener("click", () => {});
 
   // menu.addEventListener("click", () => {
   //   console.log("click from menu");
