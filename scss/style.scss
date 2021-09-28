@@ -1,20 +1,58 @@
+// color //
+$orange: rgb(250, 135, 27);
+$dark-orange: #ff4800;
+$pink: rgb(248, 142, 160);
+$cream: rgb(233, 241, 200);
+
+// Fonts //
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
+
+html {
+  background-color: $cream;
+}
 #content {
   display: flex;
+  margin: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: $cream;
 
-  header {
-    width: 500px;
-    height: 300px;
+  #header {
+    width: 100%;
+    height: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    #logo {
+      width: 80px;
+      margin-left: 50px;
+    }
     #navbar {
       list-style: none;
       display: flex;
     }
   }
+  #body {
+    width: 100%;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  img {
-    transform: rotate(-90deg);
+    #mainImage {
+      width: 90%;
+    }
+    h1 {
+      font-family: "Righteous", cursive;
+      font-size: 80px;
+      color: $dark-orange;
+      margin: 0;
+    }
   }
 }
