@@ -1,3 +1,3 @@
-import mainPage from "./components/navbar";
+import HomePage from "./components/HomePage";
 
-mainPage();
+HomePage();

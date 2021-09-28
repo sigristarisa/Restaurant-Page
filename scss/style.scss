@@ -8,10 +8,13 @@ $cream: rgb(233, 241, 200);
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
 
-html {
-  background-color: $cream;
+* {
+  font-family: "Montserrat", sans-serif;
 }
+
 #content {
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   margin: 0;
   flex-direction: column;
@@ -21,8 +24,8 @@ html {
 
   #header {
     width: 100%;
-    height: 30%;
-    margin: 20px;
+    height: 20%;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,13 +36,31 @@ html {
       margin-left: 50px;
     }
     #navbar {
+      width: 100%;
+      height: 50px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       list-style: none;
       display: flex;
+
+      li {
+        margin: 20px;
+        border: none;
+        color: $orange;
+        font-size: 16px;
+        background-color: transparent;
+      }
+
+      li:hover {
+        color: black;
+      }
     }
   }
-  #body {
+  #main {
     width: 100%;
-    min-height: 60%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,7 +73,27 @@ html {
       font-family: "Righteous", cursive;
       font-size: 80px;
       color: $dark-orange;
-      margin: 0;
+      margin-bottom: 20px;
+    }
+    #description {
+      width: 70%;
+      text-align: center;
+      margin: 20px;
+    }
+
+    #restaurantImage {
+      width: 70%;
+      margin: 100px;
+    }
+
+    .slideshowimages {
+      width: 50%;
+    }
+  }
+
+  footer {
+    p {
+      font-size: 12px;
     }
   }
 }
