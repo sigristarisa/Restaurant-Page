@@ -1,7 +1,7 @@
 const Contact = () => {
   // contact container //
   const contact = document.createElement("div");
-  contact.setAttribute("id", "menu");
+  contact.setAttribute("id", "contact");
 
   // contact title //
   const contactTitle = document.createElement("h2");
@@ -10,21 +10,25 @@ const Contact = () => {
   // contact image //
   const contactImage = document.createElement("img");
   contactImage.src = "../../assets/slideimage-1.jpg";
-  menuImage.setAttribute("id", "contactImage");
+  contactImage.setAttribute("id", "contactImage");
 
   // menu content //
   const contactContent = document.createElement("div");
   contactContent.setAttribute("id", "contactContent");
 
-  const contactTitle = document.createElement("h4");
-  const contactDescription = document.createElement("p");
+  const contactSubTitle = document.createElement("h4");
+  const contactAddress = document.createElement("p");
+  const contactHours = document.createElement("p");
 
-  contactTitle.innerText = "World Piece";
-  contactDescription.innerText = "Limmatquai 54, 8001, Zürich";
+  contactSubTitle.innerText = "World Piece";
+  contactAddress.innerText = "Limmatquai 54, 8001, Zürich";
+  contactHours.innerText =
+    "Opening hours: \n Tuesday – Friday  \n 12:00 – 14:00, 18:00 – 23:00 \n Saturday \n  18:00 – 23:00   \n \n Sunday and Monday we are closed.";
 
   // append the contact to the container
-  contactContent.appendChild(contactTitle);
-  contactContent.appendChild(contactDescription);
+  contactContent.appendChild(contactSubTitle);
+  contactContent.appendChild(contactAddress);
+  contactContent.appendChild(contactHours);
 
   contact.appendChild(contactTitle);
   contact.appendChild(contactImage);
