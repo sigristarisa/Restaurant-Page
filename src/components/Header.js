@@ -26,11 +26,24 @@ const NavBar = () => {
   const menu = document.createElement("li");
   const contact = document.createElement("li");
 
-  home.innerHTML = "Home";
-  menu.innerHTML = "Menu";
-  contact.innerHTML = "Contact";
+  home.innerHTML = "<button class='button'>Home</button>";
+  menu.innerHTML = "<button class='button'>Menu</button>";
+  contact.innerHTML = "<button class='button'>Contact</button>";
 
-  // append the buttons to the navi bar //
+  // jump to the section in the home page //
+  home.addEventListener("click", () => {
+    document.getElementById("content").scrollIntoView({ behavior: "smooth" });
+  });
+
+  menu.addEventListener("click", () => {
+    document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+  });
+
+  contact.addEventListener("click", () => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  });
+
+  // append the links to the navi bar //
   navBar.appendChild(home);
   navBar.appendChild(menu);
   navBar.appendChild(contact);

@@ -7,8 +7,8 @@
 #content {
   width: 100vw;
   min-height: 100vh;
+  margin: 0;
   display: flex;
-  margin: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,10 @@
 #content #header {
   width: 100%;
   height: 20%;
-  margin-top: 20px;
+  position: sticky;
+  top: 0;
+  padding-top: 20px;
+  background-color: #e9f1c8;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,20 +40,20 @@
   list-style: none;
   display: flex;
 }
-#content #header #navbar li {
+#content #header #navbar .button {
   margin: 20px;
   border: none;
   color: #fa871b;
   font-size: 16px;
   background-color: transparent;
 }
-#content #header #navbar li:hover {
+#content #header #navbar .button:hover {
   color: black;
 }
 #content #main {
   width: 100%;
   height: 60%;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +75,7 @@
 }
 #content #menu {
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,6 +83,7 @@
 }
 #content #menu #menuImage {
   width: 50%;
+  margin: 20px;
 }
 #content #menu h2 {
   color: #f88ea0;
@@ -105,6 +109,7 @@
 }
 #content #contact #contactImage {
   width: 50%;
+  margin: 20px;
 }
 #content #contact h2 {
   color: #f88ea0;
@@ -116,7 +121,21 @@
   text-align: center;
 }
 #content footer {
+  width: 100%;
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#content footer #socialMedia {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#content footer #socialMedia img {
+  width: 40px;
 }
 #content footer p {
   font-size: 12px;
