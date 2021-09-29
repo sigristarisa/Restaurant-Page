@@ -16,7 +16,7 @@ $cream: rgb(233, 241, 200);
   width: 100vw;
   min-height: 100vh;
   display: flex;
-  margin: 0;
+  margin: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -79,19 +79,40 @@ $cream: rgb(233, 241, 200);
       width: 70%;
       text-align: center;
       margin: 20px;
+      margin-bottom: 100px;
     }
+  }
+  #menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    #restaurantImage {
-      width: 70%;
-      margin: 100px;
-    }
-
-    .slideshowimages {
+    #menuImage {
       width: 50%;
+    }
+    h2 {
+      color: $pink;
+      font-size: 36px;
+      font-family: "Righteous", cursive;
+    }
+
+    #menuContent {
+      margin: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+
+      div {
+        width: 25%;
+      }
     }
   }
 
   footer {
+    margin-top: 100px;
     p {
       font-size: 12px;
     }
