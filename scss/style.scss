@@ -3,6 +3,8 @@ $orange: rgb(250, 135, 27);
 $dark-orange: #ff4800;
 $pink: rgb(248, 142, 160);
 $cream: rgb(233, 241, 200);
+$filter: invert(33%) sepia(77%) saturate(4194%) hue-rotate(3deg)
+  brightness(110%) contrast(104%);
 
 // Fonts //
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
@@ -37,6 +39,7 @@ $cream: rgb(233, 241, 200);
     #logo {
       width: 80px;
       margin-left: 50px;
+      filter: $filter;
     }
     #navbar {
       width: 100%;
@@ -54,6 +57,7 @@ $cream: rgb(233, 241, 200);
         color: $orange;
         font-size: 16px;
         background-color: transparent;
+        cursor: pointer;
       }
 
       .button:hover {
@@ -156,6 +160,10 @@ $cream: rgb(233, 241, 200);
 
       img {
         width: 40px;
+        filter: $filter;
+      }
+      img:hover {
+        filter: none;
       }
     }
     p {

@@ -5,7 +5,7 @@ const Header = () => {
 
   // logo //
   const logo = document.createElement("img");
-  logo.src = "../../assets/pizza-dark-orange.svg";
+  logo.src = "../../assets/pizza.svg";
   logo.setAttribute("id", "logo");
 
   // append the logo and the navibar to the header //

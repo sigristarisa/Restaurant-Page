@@ -7,15 +7,18 @@ const Footer = () => {
 
   const facebook = document.createElement("a");
   facebook.href = "https://www.facebook.com/";
+  facebook.target = "_blank";
   facebook.innerHTML = facebook.innerHTML =
     "<img src ='../../assets/facebook.svg' />";
 
   const twitter = document.createElement("a");
   twitter.href = "https://twitter.com/?lang=en";
+  twitter.target = "_blank";
   twitter.innerHTML = "<img src ='../../assets/twitter.svg' />";
 
   const instagram = document.createElement("a");
   instagram.href = "https://www.instagram.com/";
+  instagram.target = "_blank";
   instagram.innerHTML = "<img src ='../../assets/instagram.svg' />";
 
   socialContainer.appendChild(facebook);

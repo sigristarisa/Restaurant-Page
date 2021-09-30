@@ -29,6 +29,7 @@
 #content #header #logo {
   width: 80px;
   margin-left: 50px;
+  filter: invert(33%) sepia(77%) saturate(4194%) hue-rotate(3deg) brightness(110%) contrast(104%);
 }
 #content #header #navbar {
   width: 100%;
@@ -46,6 +47,7 @@
   color: #fa871b;
   font-size: 16px;
   background-color: transparent;
+  cursor: pointer;
 }
 #content #header #navbar .button:hover {
   color: black;
@@ -136,6 +138,10 @@
 }
 #content footer #socialMedia img {
   width: 40px;
+  filter: invert(33%) sepia(77%) saturate(4194%) hue-rotate(3deg) brightness(110%) contrast(104%);
+}
+#content footer #socialMedia img:hover {
+  filter: none;
 }
 #content footer p {
   font-size: 12px;
